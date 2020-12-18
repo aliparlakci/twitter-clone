@@ -11,17 +11,13 @@ export const SessionProvider = ({ children }) => {
   const firebase = useFirebase();
 
   useEffect(
-    () => firebase.client.auth()?.onAuthStateChanged((user) => setUser(user)),
+    () => firebase.client.auth().onAuthStateChanged((user) => setUser(user)),
     [firebase.client]
   );
 
-  const store = { user };
-
   return (
     <>
-      <SessionContext.Provider value={store}>
-        {children}
-      </SessionContext.Provider>
+      <SessionContext.Provider value={user}>{children}</SessionContext.Provider>
     </>
   );
 };

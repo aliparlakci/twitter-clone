@@ -1,0 +1,87 @@
+.main {
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0;
+    border-left: 1px solid lightgray;
+    border-right: 1px solid lightgray;
+    min-height: 100vh;
+    height: fit-content;
+    width: 100vw;
+    max-width: 560px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.main > * {
+    margin-bottom: 1em;
+    width: 100%;
+}
+
+.login {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    font-weight: 300;
+    padding: 1rem 1rem 0 1rem;
+}
+
+.newtweet {
+    padding: 0 1em 0 1em;
+}
+
+.newtweet textarea {
+    height: 100px;
+    resize: none;
+}
+
+.tweet_count {
+    float: right;
+}
+
+.submit_tweet {
+    margin-top: 1em;
+    transition: 0.1s;
+}
+
+.tweets {
+    border-top: 1px solid lightgray;
+}
+
+.tweet_container {
+    width: 100%;
+    display: flex;
+    padding: 1em;
+    border-bottom: 1px solid lightgray;
+    transition: 0.2s;
+}
+
+.tweet_owner {
+    font-weight: 700;
+}
+
+.tweet_text {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0.5em;
+    font-weight: 300;
+}
+
+.pp {
+    border-radius: 999px;
+    width: 48px;
+    height: 48px;
+}
+
+.btn-link.unliked {
+    padding: 0;
+}
+
+.btn-link.liked {
+    color: red !important;
+    padding: 0;
+}
