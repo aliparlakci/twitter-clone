@@ -26,6 +26,13 @@ const LoginButton = () => {
                     {user.displayName} | Logout
                 </button>
             )}
+            {user !== null && (
+                <img
+                    src={user.photoURL}
+                    alt={user.displayName}
+                    className="pp"
+                />
+            )}
         </div>
     );
 };

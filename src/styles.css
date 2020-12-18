@@ -22,12 +22,13 @@
 
 .login {
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: space-between;
     width: 100%;
     font-weight: 300;
     padding: 1rem 1rem 0 1rem;
+    min-height: 64px;
 }
 
 .newtweet {
@@ -75,6 +76,7 @@
     border-radius: 999px;
     width: 48px;
     height: 48px;
+    float: left;
 }
 
 .btn-link.unliked {
