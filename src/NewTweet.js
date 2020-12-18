@@ -45,7 +45,7 @@ const NewTweet = () => {
                 <input
                     type="submit"
                     value="Tweet"
-                    disabled={isDisabled || user === null}
+                    disabled={isDisabled || user === null || tweet.length < 1}
                     className="submit_tweet btn btn-primary"
                 />
                 <span className="tweet_count">{tweet.length} / 140</span>
