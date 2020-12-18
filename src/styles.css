@@ -45,6 +45,7 @@
 }
 
 .submit_tweet {
+    font-family: 'Roboto', sans-serif;
     margin-top: 1em;
     transition: 0.1s;
 }
@@ -71,6 +72,7 @@
     flex-direction: column;
     padding-left: 0.5em;
     font-weight: 300;
+    width: 100%;
 }
 
 .pp {
@@ -80,11 +82,25 @@
     float: left;
 }
 
-.btn-link.unliked {
-    padding: 0;
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
-.btn-link.liked {
+.unliked {
+    padding: 0;
+    color: #007bff;
+    font-weight: 1000;
+}
+
+.liked {
+    font-family: 'Roboto', sans-serif;
     color: red !important;
+    padding: 0;
+    font-weight: 1000;
+}
+
+.delete {
     padding: 0;
 }

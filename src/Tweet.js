@@ -32,8 +32,10 @@ const Tweet = ({ data }) => {
             <div className="tweet_text">
                 <span className="tweet_owner">{data.ownerName}</span>
                 <span>{data.text}</span>
-
-                <span className="buttons">
+                <div className="buttons">
+                    {user === null && (
+                        <span className="unliked">{data.likedBy.length} ❤</span>
+                    )}
                     {user !== null && (
                         <>
                             {!data.likedBy.includes(user.uid) && (
@@ -52,10 +54,9 @@ const Tweet = ({ data }) => {
                                     {data.likedBy.length} ❤
                                 </button>
                             )}
-
                             {user !== null && user.uid === data.owner && (
                                 <button
-                                    className="btn btn-link btn-sm"
+                                    className="btn btn-link delete"
                                     onClick={deleteTweet}
                                 >
                                     Delete
@@ -63,7 +64,7 @@ const Tweet = ({ data }) => {
                             )}
                         </>
                     )}
-                </span>
+                </div>
             </div>
         </div>
     );
