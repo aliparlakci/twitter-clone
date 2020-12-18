@@ -55,6 +55,7 @@
 
 .tweet_container {
     width: 100%;
+    min-height: 112px;
     display: flex;
     padding: 1em;
     border-bottom: 1px solid lightgray;
