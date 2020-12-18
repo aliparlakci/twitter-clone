@@ -2,7 +2,7 @@ import React from 'react';
 import { useFirebase } from './FirebaseProvider';
 import { useSession } from './SessionProvider';
 
-const LoginButton = () => {
+const LoginAction = () => {
     const firebase = useFirebase();
     const user = useSession();
 
@@ -37,4 +37,4 @@ const LoginButton = () => {
     );
 };
 
-export default LoginButton;
+export default LoginAction;
