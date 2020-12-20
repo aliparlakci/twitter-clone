@@ -23,7 +23,6 @@ const NewTweet = () => {
                 ownerName: user.displayName,
                 ownerPhoto: user.photoURL,
                 text: tweet,
-                likedBy: [],
                 timestamp: client.firestore.FieldValue.serverTimestamp(),
             })
             .then(() => setDisabled(false));
